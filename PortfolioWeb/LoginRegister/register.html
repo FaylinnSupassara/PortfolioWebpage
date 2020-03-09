@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Page Title</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+	<script src='register.js'></script>
+</head>
+
+<body>
+	<div class="grid-Registercontainer">
+		<div class="photo">
+			<img src="community.png" class="image_center" style="width:100%">
+		</div>
+		<div class="RegisterContainer">
+			<form name="myForm" id="myForm" action="login.html">
+				<fieldset class="fieldsetRegister">
+					<legend>Register</legend>
+					<span>* require</span> <br>
+					<span id="errormsg"></span> <br>
+					<div class="textBox">First Name*</div>
+					<input class="registerInputSet" type="text" name="firstname" required>
+					<br>
+					<div class="textBox">Last Name*</div>
+					<input class="registerInputSet" type="text" name="lastname" required>
+					<br>
+					<div class="textBox">Gender*</div>
+					<input class="input radio" type="radio" name="gender" value="male" required>Male
+					<input class="input radio" type="radio" name="gender" value="female" required>Female
+					<input class="input radio" type="radio" name="gender" value="female" required>Other
+					<br>
+					<div class="textBox">Birthday*</div>
+					<input class="registerInputSet" type="date" name="bday" value="" required>
+					<br>
+					<div class="textBox">Email Address*</div>
+					<input class="registerInputSet" type="email" name="email" required>
+					<br>
+					<div class="textBox">Username*</div>
+					<input class="registerInputSet" type="text" name="username" required>
+					<br>
+					<div class="textBox">Password*</div>
+					<input class="registerInputSet" type="password" name="password" required>
+					<br>
+					<div class="textBox">Retype Password*:</div>
+					<input class="registerInputSet" type="password" name="retypePassword" required>
+					<br>
+					<div class="Buttoncontainer">
+						<input class="input button" type="submit" value="Register">
+						<input class="input button" type="reset" value="Reset">
+					</div>
+					<br>
+					<div class="linkBox">
+						<a href="login.html">Already have an account? LOG IN!!</a>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>

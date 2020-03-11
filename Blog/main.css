@@ -1,0 +1,94 @@
+body{
+    margin: 30px;
+    padding-top: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    background: url("background.png");
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    font-size: 60pt;
+    line-height: 20pt;
+    text-shadow:5px 5px #ffffff;
+}
+
+.chatTemplate{
+    background-color: #ffffffa8;
+    padding: 20px;
+    height: 400px;
+    width: 1000px;
+    border-radius: 8px;
+}
+
+.chatBox{
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px;
+    margin-bottom: 20px;
+    height: 30px;
+    max-height: 50px;
+}
+
+.container1{
+    background-color: #fce1e1;
+    border: 2px solid #c79797;
+}
+
+.container2{
+    background-color: #f4fce1;
+    border: 2px solid #b2c797;
+}
+
+.container3{
+    background-color: #e1eafc;
+    border: 2px solid #97adc7;
+
+}
+
+.flex-container{
+    display: grid;
+    grid-template-columns: auto 10%;
+    grid-template-rows: 50px 50px;
+}
+
+.inputText{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.submit{
+    grid-row: span 1;
+    grid-column: span 1;
+}
+.clear{
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+textarea{
+    background-color: #eeeeee;
+    border: 2px solid #c4c4c4;
+    height: 100px;
+    width: 93%;
+    margin-left: 5px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #0086d3;
+    color: #F1F5F0;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 4px 2px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.clearButton{
+    background-color: #bdbdbd;
+}
+
+

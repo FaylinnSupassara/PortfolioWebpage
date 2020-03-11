@@ -1,0 +1,450 @@
+body{
+  background-color: #fff9e8;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+  margin-top: 60pt;
+  line-height: 70%;
+}
+
+h2,h3{
+  line-height: 70%;
+}
+
+p{
+  font-size: 16pt;
+}
+
+hr{
+  width: 90%;
+  border: 0; border-top: 1px solid #555555;
+
+}
+
+#white-line{
+  width: 70%;
+  border: 0; border-top: 1px solid #ffffff;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.grid-container>div{
+    text-align: left;
+}
+
+#header{
+  grid-column: 1/ span 2;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 16pt;
+  color: #f6be52;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#photo{
+    grid-column: 1/ span 1;
+    background-color: #f6be52;
+    text-align: center;
+    height: 500px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 0px;
+}
+
+#information{
+    grid-column: 2/ span 1;
+    text-align: center;
+    height: 477px;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 80px;
+    text-align: left;
+    font-size: 18pt;
+    cursor: pointer;
+}
+
+#interest{
+    grid-column: 1/ span 1;
+    color: #f6be52;
+    font-size: 20pt;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 0px;
+    
+}
+
+#project{
+    grid-column: 2/ span 1;
+    color: #f6be52;
+    font-size: 20pt;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 80px;
+}
+
+#footer{
+    grid-column: 1/ span 2;
+    background-color: #241818;
+    text-align: center;
+    font-size: 16pt;
+    margin-top: 30px;
+    color: #f6be52;
+    padding: 20px;
+}
+
+.infomationClass{
+  line-height: 70%;
+}
+
+.image_center{
+  text-align: center;
+  width: 150%;
+}
+
+a:link {
+    text-decoration: none;
+    color:#ffffff;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color:#ffffff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color:#ffffff;
+  }
+  
+  a:active {
+    text-decoration: underline;
+    color:#ffffff;
+  }
+
+  .button {
+    background-color: #f6be52;
+    color: #F1F5F0;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 4px 2px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  /* FilpCard: https://www.w3schools.com/howto/howto_css_flip_card.asp */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 105%;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #ffffff;
+    color: #f6be52;
+  }
+  
+  .flip-card-back {
+    background-color: #f6be52;
+    color: #ffffff;
+    transform: rotateY(180deg);
+    font-size: 16pt;
+    line-height: 70%;
+  }
+
+  .flip-card-back > p{
+    line-height: 10px;;
+  }
+  
+  #skill-Header{
+    text-align: center;
+  color: #f6be52;
+  }
+
+  /* Skill bar: https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+  .flex-skillLayout{
+    margin-top: 10px;
+  }
+
+  .flex-skillLayout > p {
+    color: #555555;
+  }
+
+  .flex-skillLayout > p{
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 15px;
+    width: 100px;
+    height: 2px;
+    text-align: right;
+  }
+
+  .skill-container {
+    display: inline-block;
+    width: 60%;
+    background-color: #cccccc;
+    margin-left: 20px;
+  }
+  
+  .skills {
+    text-align: right;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 10px;;
+    color: #ffffff;
+    font-size: 14pt;
+  }
+  
+  .Photoshop {width: 75%; background-color: #92d050;}
+  .AnimateCC {width: 75%; background-color: #92d050;}
+  .Maya {width: 50%; background-color: #ffd966;}
+  .Zbrush {width: 25%; background-color: #f54b2f;}
+  .Coding {width: 25%; background-color: #f54b2f;}
+
+
+  /* Image hover overlay: https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .interestPhoto_container {
+    position: relative;
+    margin-top: 30px;
+    margin-right: 25px;
+    width: 30%;
+    border: 1px #f9cdad dotted;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    background-color: #ffffff;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .interestPhoto_container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .interestPhoto_container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    color: black;
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .text2{
+    background-color: #f6be52;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  @media only screen and (max-width: 1400px){
+    h1{
+      font-size: 24pt;
+      margin-top: 100px;
+    }
+    
+    h2,h3{
+      font-size: 18pt;
+      line-height: 70%;
+    }
+
+    #photo{
+      grid-column: 1/ span 1;
+      margin-left: 5%;
+    }
+
+    #information{
+      grid-column: 2/ span 1;
+      margin-right: 5%;
+      width: 90%;
+    }
+
+    #interest{
+      grid-column: 1/ span 2;
+      margin-top: 70px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  
+    #project{
+      grid-column: 1/ span 2;
+      margin-top: 70px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    .skill-container {
+      display: inline-block;
+      width: 50%;
+      background-color: #cccccc;
+      margin-left: 20px;
+    }
+
+  }
+
+  @media only screen and (max-width: 1300px){
+  
+    h1{
+      font-size: 20pt;
+      margin-top: 30px;
+    }
+    
+    h2,h3{
+      font-size: 18pt;
+      line-height: 70%;
+    }
+
+    p{
+      font-size: 14pt;
+    }
+
+    .grid-container{
+      display: grid;
+      grid-template-columns: auto;
+    }
+  
+    #photo{
+      grid-column: 1/ span 1;
+      margin-left: 2%;
+      margin-right: 2%;
+      height: 100%;
+    }
+  
+    #information{
+      grid-column: 1/ span 1;
+      margin-top: 2%;
+      margin-left: 2%;
+      margin-right: 2%;
+      width: 96.5%;
+    }
+  
+   #interest{
+      grid-column: 1/ span 1;
+      margin-top: 70px;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  
+    #project{
+      grid-column: 1/ span 1;
+      margin-top: 70px;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  
+   #footer{
+      grid-column: 1/ span 12;
+    }
+
+    .interestPhoto_container {
+      position: relative;
+      margin-top: 30px;
+      margin-right: 25%;
+      margin-left: 25%;
+      width: 50%;
+      border: 1px #f9cdad dotted;
+    }
+    
+    .button{
+      margin-right: 45%;
+      margin-left: 45%;
+      size: 250%;
+    }
+  }
+
+  @media only screen and (max-width: 545px){
+    #photo{
+      grid-column: 1/ span 1;
+      margin-left: 10px;
+      margin-right: 10px;
+      height: 290px;
+    }
+  
+    #information{
+      grid-column: 1/ span 1;
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 96%;
+    }
+  
+   #interest{
+      grid-column: 1/ span 1;
+      margin-top: 70px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  
+    #project{
+      grid-column: 1/ span 1;
+      margin-top: 70px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  
+   #footer{
+      grid-column: 1/ span 1;
+    }
+
+    .interestPhoto_container {
+      position: relative;
+      margin-top: 20px;
+      margin-right: 5%;
+      margin-left: 5%;
+      width: 90%;
+      border: 1px #f9cdad dotted;
+    }
+    
+    .button{
+      margin-right: 35%;
+      margin-left: 35%;
+      size: 250%;
+    }
+  }
